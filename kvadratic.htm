@@ -1,54 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div  {
-animation: rotate .7s 4 alternate ease-out;
-cursor: pointer;
-}
-
-@keyframes rotate {
-        0% {
-  background:wight;
-  }
-  50%{
-    background: white;
-  }
-  75%{
-    background:green;
-  }
-  100% {
-  background:green;
-  }
-}
-        
-  
-    </style>
 </head>
 <body>
-    <div>Cьешь меня</div>
+    <script>
+        var a = prompt('Введите месяц');
+        if (a== 'Август'){
+            alert ('Отдых! Пора!');
+        }
+        else if (a== 'Июль'){
+            alert('Остался месяц до отдыха!');
+        }
+        else(a== 'Сентябрь'){
+            alert('Кажется, вы уже отдохнули, следующий отпуск через год.');
+        }
+    </script>
 </body>
 </html>
-div{
-    background-color:rgb(255, 255, 255) ;
-    width:1500px ;
-    height: 20px;
-    margin: 100px auto;
-    padding: 25px;
-    text-align: center;
-    
-}
-div{
-    transition-property: background;
-    transition-duration: .5s;
-    transition-timing-function: ease-out;
-    transition-delay: 3s;
-   animation-iteration-count: 3;
-}
-div:hover{
-    background-color: chartreuse;
-   
-}
