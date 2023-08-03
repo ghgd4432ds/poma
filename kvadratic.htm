@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+       
+        function sendMassage() {
+            var be = ['Думайте о прошлом, только если воспоминания приятны вам.','Никто не ценит того, чего слишком много.','Я обо всем подумаю потом, когда найду в себе силы это выдержать. ']
+        alert (be[0]);
+        alert (be[1]);
+        alert (be[2]);
+        }
+   </script>
 </head>
 <body>
-    <script>
-                  let a = prompt('Введите вашу зарплату');
-            if (a<100000){
-               alert( "Ваша зарплата " + (a*0.65)+ ' рублей');
-            }
-            else  {
-                alert ('Ваша зарплата'+ (a * 0.55) + 'рублей');
-            }
-        
-           
-    </script>
+    <input value="Работает?" onclick="alert('Работает. Не трогай')" type="button" >
+    <input type="button" value="хм..."onclick="sendMassage()">
+    
+   
 </body>
 </html>
