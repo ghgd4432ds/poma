@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-       
-        function sendMassage() {
-            var be = ['Думайте о прошлом, только если воспоминания приятны вам.','Никто не ценит того, чего слишком много.','Я обо всем подумаю потом, когда найду в себе силы это выдержать. ']
-        alert (be[0]);
-        alert (be[1]);
-        alert (be[2]);
+        function del() {
+            var tasks_list = document.getElementsByClassName('current');//поиск по названию тега
+            console.log(tasks_list);//выводим его в консоль
+            tasks_list.removechild(tasks_list[0])//удаление элимента
+        }
+        function add_task() {
+            var tasks_list = document.getElementsByClassName('cerrent');//создаём переменную и вызываем её черес имя класса
+            console.log(tasks_list.length);//выводим длину этой переменной
+            console.log(tasks_list[0].innerHTML);//добавляем текстовый узел и выводим его в консоль
+            var tasks_list= document.getElementById('cerrent');//вызываем элимент через id
+            console.log(tasks_list);//выводим его
+            var arr = document. getElementsByTagName('div');//вызывем тег div
+            console.log(arr.length);//выводим его длинну
+            console.log(arr[0]);//выводим переменную
+            var tasks_list= document.getElementsByTagName('ol');//вызывем тег оl
+            console.log(tasks_list.length)//и выводим его длинну    
         }
    </script>
 </head>
 <body>
-    <input value="Работает?" onclick="alert('Работает. Не трогай')" type="button" >
-    <input type="button" value="хм..."onclick="sendMassage()">
     
-   
 </body>
 </html>
